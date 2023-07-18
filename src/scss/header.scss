@@ -1,0 +1,29 @@
+.header {
+	min-height: 80px;
+	padding: 5px 0px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+	&__contacts {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		&::before {
+			color: #BEA495;
+		}
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		font-family: 'Comfortaa', cursive;
+		text-transform: uppercase;
+	}
+}

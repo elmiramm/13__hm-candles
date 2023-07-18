@@ -1,3 +1,85 @@
+@font-face {
+  font-family: Comfortaa;
+  font-display: swap;
+  src: url("../fonts/Comfortaa-Bold.woff2") format("woff2"), url("../fonts/Comfortaa-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Comfortaa;
+  font-display: swap;
+  src: url("../fonts/Comfortaa-Regular.woff2") format("woff2"), url("../fonts/Comfortaa-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Comfortaa;
+  font-display: swap;
+  src: url("../fonts/Comfortaa-SemiBold.woff2") format("woff2"), url("../fonts/Comfortaa-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: YesevaOne;
+  font-display: swap;
+  src: url("../fonts/YesevaOne-Regular.woff2") format("woff2"), url("../fonts/YesevaOne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=icon-]:before, [class*=" icon-"]:before {
+  display: block;
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+
+.icon-facebook:before {
+  content: "\e901";
+}
+
+.icon-insta:before {
+  content: "\e902";
+}
+
+.icon-linkedin:before {
+  content: "\e903";
+}
+
+.icon-phone:before {
+  content: "\e904";
+}
+
+.icon-play:before {
+  content: "\e905";
+}
+
 /**
  * Swiper 10.0.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -271,6 +353,9 @@ a {
   color: inherit;
   transition: all 0.3s ease;
 }
+a:hover {
+  color: #7B6152;
+}
 
 h1,
 h2,
@@ -320,8 +405,8 @@ select {
 }
 
 .container {
-  max-width: 1190px;
-  padding: 0 15px;
+  max-width: 1180px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -352,4 +437,32 @@ select {
   line-height: 1.42;
   font-weight: 700;
   text-align: center;
+}
+
+.header {
+  min-height: 80px;
+  padding: 5px 0px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.header__contacts::before {
+  color: #BEA495;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
 }

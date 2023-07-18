@@ -10,7 +10,7 @@ $accentBg: #A5978E;
 $smallBlogsBg: #7B6152;
 
 
-$maxWidthContainer: 1190px;
+$maxWidthContainer: 1180px;
 
 $bp992: 991.98px;
 $bp768: 767.98px;
@@ -20,8 +20,8 @@ $bp320: 319.98px;
 $burgerBP: $bp480;
 //------Vars-End------ 
 
-// @import "fonts";
-// @import "icons"; 
+@import "fonts";
+@import "icons"; 
 @import "../../node_modules/swiper/swiper";
 
 html {
@@ -57,6 +57,9 @@ a {
 	text-decoration: none;
 	color: inherit;
 	transition: all 0.3s ease;
+	&:hover {
+		color: $smallBlogsBg;
+	}
 }
 
 h1,
@@ -110,7 +113,7 @@ select {
 
 .container {
 	max-width: $maxWidthContainer;
-	padding: 0 15px;
+	padding: 0 10px;
 	margin: 0 auto;
 }
 
