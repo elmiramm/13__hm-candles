@@ -1,0 +1,33 @@
+.footer {
+	padding: 35px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		font-family: 'Comfortaa', cursive;
+	}
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	&__link {
+		&::before {
+			font-size: 18px;
+		}
+		&:hover {
+			svg path {
+				stroke: $smallBlogsBg;
+				transition: stroke 0.3s ease;
+			}
+		}
+	}
+}

@@ -466,3 +466,32 @@ select {
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
 }
+
+.footer {
+  padding: 35px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Comfortaa", cursive;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.socials__link::before {
+  font-size: 18px;
+}
+.socials__link:hover svg path {
+  stroke: #7B6152;
+  transition: stroke 0.3s ease;
+}
