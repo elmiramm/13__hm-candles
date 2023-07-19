@@ -617,8 +617,19 @@ select {
     transition: transform 0.3s ease;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 530px) {
   .container {
     padding: 0 10px;
+  }
+  .header .menu {
+    right: 10px;
+  }
+  .footer__inner {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer .menu__list {
+    flex-direction: column;
+    gap: 22px;
   }
 }

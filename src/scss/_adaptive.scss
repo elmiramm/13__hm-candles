@@ -69,14 +69,29 @@
 		
 	}
 }
-@media (max-width: 520px) {
-	
-}
-@media (max-width: $bp480) {
+@media (max-width: 530px) {
 	.container {
 		padding: 0 10px;
 	}
+	.header{
+		.menu {
+			right: 10px;
+		}
+	}
+	.footer {
+		&__inner {
+			flex-direction: column;
+			gap: 50px;
+		}
+		.menu__list {
+			flex-direction: column;
+			gap: 22px;
+		}
+	}
 }
-@media (max-width: $bp320) {
+// @media (max-width: $bp480) {
 	
-}
+// }
+// @media (max-width: $bp320) {
+	
+// }
