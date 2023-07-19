@@ -10,14 +10,14 @@ $accentBg: #A5978E;
 $smallBlogsBg: #7B6152;
 
 
-$maxWidthContainer: 1180px;
+$maxWidthContainer: 1200px;
 
 $bp992: 991.98px;
 $bp768: 767.98px;
 $bp480: 479.98px;
 $bp320: 319.98px;
 
-$burgerBP: $bp480;
+$burgerBP: 660px;
 //------Vars-End------ 
 
 @import "fonts";
@@ -113,7 +113,7 @@ select {
 
 .container {
 	max-width: $maxWidthContainer;
-	padding: 0 10px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 
@@ -149,10 +149,11 @@ select {
 }
 
 @import "header";
+@import "burger";
 @import "footer";
 
 // -----Общие блоки-End -----
 
 
 // Adaptive 
-// @import "_media"; 
+@import "_adaptive"; 

@@ -1,5 +1,6 @@
 .footer {
 	padding: 35px 0;
+	background-color: #fff;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -7,6 +8,8 @@
 		gap: 20px;
 	}
 	&__contacts {
+		min-width: 230px;
+
 		display: flex;
 		flex-direction: column;
 		gap: 15px;

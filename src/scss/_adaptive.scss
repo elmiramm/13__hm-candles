@@ -1,0 +1,82 @@
+@media (max-width: 1000px) {
+	
+}
+@media (max-width: 830px) {
+	body {
+		font-size: 10px;
+	}
+	.header {
+		padding: 0;
+		&__inner {
+			gap: 15px;
+		}
+		&__contacts {
+			gap: 2px;
+		}
+	}
+	.footer {
+		&__inner {
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+		&__contacts {
+			width: 100%;
+			text-align: center;
+		}
+		.socials {
+			justify-content: center;
+		}
+	}
+}
+@media (max-width: $bp768) {
+	.container {
+		max-width: 720px;
+	} 
+}
+@media (max-width: $burgerBP) {
+	.header {
+		position: relative;
+		&__inner {
+			flex-wrap: wrap;
+		}
+		.menu {
+			padding: 25px 10px;
+			order: 4;
+			min-width: 153px;
+			background-color: $smallBlogsBg;
+
+			color: $textColor;
+
+			position: absolute;
+			right: 20px;
+			top: 80px;
+
+			transform: translateX(200%);
+			transition: transform 0.3s ease;
+			&__list {
+				flex-direction: column;
+			}
+			&__list-link{
+				&:hover {
+					color: $accentColor;
+				}
+			}
+		}
+		.menu--open {
+			transform: translateX(0%);
+			transition: transform 0.3s ease;
+		}
+		
+	}
+}
+@media (max-width: 520px) {
+	
+}
+@media (max-width: $bp480) {
+	.container {
+		padding: 0 10px;
+	}
+}
+@media (max-width: $bp320) {
+	
+}

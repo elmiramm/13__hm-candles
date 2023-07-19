@@ -1,0 +1,64 @@
+// .active-burger - className for CLOSE-btn
+.burger {
+	display: none;
+	@media (max-width: $burgerBP) {
+		display: block;
+		position: relative;
+		height: 25px;
+		width: 30px;
+
+		cursor: pointer;
+	
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			background-color: #000;
+			border-radius: 1px;
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+		&::before {
+		top: 0;
+		}
+		&::after {
+		bottom: 0;
+		}
+		&.active-burger {
+			&::before {
+				transform: rotate(45deg);
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+				top: 13px;
+			}
+			&::after{
+				transform: rotate(-45deg);
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+				bottom: 10px;
+			}
+
+			& span {
+				transform: scale(0);
+			}
+		}
+
+		& span {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #000;
+			border-radius: 2px;
+			transform: scale(1);
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+			&:first-child {
+				top: 25%;
+			}
+			&:last-child {
+				top: 75%;
+			}
+		}
+	}
+}
