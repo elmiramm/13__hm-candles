@@ -1,5 +1,5 @@
 // ------Vars------ 
-$fontFamily: "Yeseva One";
+$fontFamily: 'Comfortaa';
 $fontSize: 14px;
 $mainTextColor: #000;
 $textColor: #FAFAFA;
@@ -119,39 +119,49 @@ select {
 }
 
 // -----Общие блоки-----
+.section {
+	&__inner  {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__left {
+		max-width: 388px;
+	}
+}
 .btn {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 6px 12px;
+	padding: 10px 12px;
 	text-align: center;
 	transition: all 0.3s ease;
-	min-height: 40px;
-	min-width: 160px;
-	line-height: 1.75;
+	min-height: 55px;
+	min-width: 150px;
+	line-height: 1.125;
 	font-weight: 600;
-	color: #FFFFF0;
 	background-color: $accentColor;
-	border-radius: 21px;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: #000;
-			color: $accentColor;
+			background-color: $smallBlogsBg;
+			color: $textColor;
+			font-size: 18px;
 		}
 	}
 }
 
 .title {
-	// font-family: 'Montserrat';
-	font-size: 36px;
-	line-height: 1.42;
-	font-weight: 700;
-	text-align: center;
+	font-family: 'Yeseva One', cursive;
+	font-size: 40px;
+
+	margin-bottom: 15px;
 }
 
 @import "header";
 @import "burger";
+@import "top";
 @import "footer";
+
 
 // -----Общие блоки-End -----
 

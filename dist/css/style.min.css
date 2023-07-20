@@ -339,7 +339,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: "Yeseva One", cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
@@ -411,33 +411,40 @@ select {
   margin: 0 auto;
 }
 
+.section__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section__left {
+  max-width: 388px;
+}
+
 .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
+  padding: 10px 12px;
   text-align: center;
   transition: all 0.3s ease;
-  min-height: 40px;
-  min-width: 160px;
-  line-height: 1.75;
+  min-height: 55px;
+  min-width: 150px;
+  line-height: 1.125;
   font-weight: 600;
-  color: #FFFFF0;
   background-color: #FFBD59;
-  border-radius: 21px;
 }
 @media (any-hover: hover) {
   .btn:hover {
-    background-color: #000;
-    color: #FFBD59;
+    background-color: #7B6152;
+    color: #FAFAFA;
+    font-size: 18px;
   }
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.42;
-  font-weight: 700;
-  text-align: center;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
 .header {
@@ -466,7 +473,6 @@ select {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-family: "Comfortaa", cursive;
   text-transform: uppercase;
 }
 
@@ -529,6 +535,33 @@ select {
   }
 }
 
+.top {
+  padding-top: 30px;
+  margin-bottom: 150px;
+}
+.top__inner {
+  position: relative;
+}
+.top__left {
+  padding-top: 150px;
+  padding-bottom: 250px;
+}
+.top__title {
+  font-size: 30px;
+}
+.top__text {
+  margin-bottom: 48px;
+}
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  right: -138px;
+}
+.top__img img {
+  width: 1068px;
+}
+
 .footer {
   padding: 35px 0;
   background-color: #fff;
@@ -544,7 +577,6 @@ select {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-family: "Comfortaa", cursive;
 }
 
 .socials {
@@ -595,7 +627,7 @@ select {
     flex-wrap: wrap;
   }
   .header .menu {
-    padding: 25px 10px;
+    padding: 25px 10px 25px 45px;
     order: 4;
     min-width: 153px;
     background-color: #7B6152;
@@ -608,6 +640,7 @@ select {
   }
   .header .menu__list {
     flex-direction: column;
+    align-items: start;
   }
   .header .menu__list-link:hover {
     color: #FFBD59;
@@ -623,6 +656,9 @@ select {
   }
   .header .menu {
     right: 10px;
+  }
+  .footer {
+    font-size: 14px;
   }
   .footer__inner {
     flex-direction: column;

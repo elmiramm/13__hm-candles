@@ -1,0 +1,26 @@
+.top {
+	padding-top: 30px;
+	margin-bottom: 150px;
+	&__inner {
+		position: relative;
+	}
+	&__left {
+		padding-top: 150px;
+		padding-bottom: 250px;
+	}
+	&__title {
+		font-size: 30px;
+	}
+	&__text {
+		margin-bottom: 48px;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 240px;
+		right: -138px;
+		img {
+			width: 1068px;
+		}
+	}
+}
