@@ -3,6 +3,7 @@
 	width: 100%;
 	min-height: 80px;
 	padding: 5px 0px;
+	z-index: 10;
 	&__inner {
 		display: flex;
 		justify-content: space-between;

@@ -1,5 +1,25 @@
 @media (max-width: 1000px) {
-	
+	.section {
+		&__left {
+			max-width: 300px;
+		}
+	}
+	.top {
+		&__left {
+			max-width: 335px;
+			padding-top: 125px;
+			padding-bottom: 80px;
+		}
+		&__text {
+			margin-bottom: 30px;
+		}
+		&__img {
+			left: 280px;
+			img {
+				width: 655px;
+			}
+		}
+	}
 }
 @media (max-width: 830px) {
 	body {
@@ -30,8 +50,36 @@
 }
 @media (max-width: $bp768) {
 	.container {
-		max-width: 720px;
-	} 
+		max-width: 680px;
+	}
+	.section {
+		&__left {
+			max-width: 200px;
+		}
+	}
+	.title {
+		font-size: 15px;
+	}
+	.top {
+		&__left {
+			max-width: 230px;
+			padding-top: 100px;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__text {
+			margin-bottom: 20px;
+		}
+		.btn {
+			min-height: 45px;
+			padding: 6px 12px;
+			min-width: 120px;
+		}
+		&__img {
+			left: 180px;
+		}
+	}
 }
 @media (max-width: $burgerBP) {
 	.header {
@@ -79,6 +127,36 @@
 			right: 10px;
 		}
 	}
+
+	.top {
+		margin-bottom: 50px;
+		&__left {
+			max-width: 170px;
+			padding-top: 80px;
+		}
+		&__title {
+			font-size: 15px;
+			margin-bottom: 15px;
+		}
+		&__text {
+			font-size: 8px;
+			margin-bottom: 15px;
+		}
+		.btn {
+			min-height: 34px;
+			min-width: 95px;
+			font-size: 10px;
+			&:hover {
+				font-size: 12px;
+			}
+		}
+		&__img {
+			left: 145px;
+			img {
+				width: 326px
+			}
+		}
+	}
 	.footer {
 		font-size: 14px;
 		&__inner {
@@ -94,6 +172,25 @@
 // @media (max-width: $bp480) {
 	
 // }
-// @media (max-width: $bp320) {
-	
-// }
+@media (max-width: 380px) {
+	.top {
+		&__left {
+			max-width: 230px;
+			padding-top: 60px;
+			padding-bottom: 0;
+		}
+		&__title {
+			font-size: 18px;
+		}
+		&__text {
+			font-size: 10px;
+		}
+		&__img {
+			left: 213px;
+			top: 30px;
+			img {
+				width: 150px
+			}
+		}
+	}
+}
