@@ -1,0 +1,53 @@
+.about {
+	background-color: $accentBg;
+	padding: 50px 0;
+
+	margin-bottom: 150px;
+	color: $textColor;
+	&__inner {
+		align-items: center;
+	}
+	&__left {
+		min-width: 370px;
+	}
+	&__text{
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		padding-left: 110px;
+		padding-bottom: 48px;
+
+		position: relative;
+
+		&::before {
+			content: "";
+			width: 24px;
+			height: 33px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-image: url(../img/icons/candle.svg);
+		}
+		&::after {
+			content: "";
+			width: 1000%;
+			height: 1px;
+			position: absolute;
+			bottom: 13px;
+			left: 22px;
+			background-color: $smallBlogsBg;
+		}
+	}
+	&__list-img {
+		margin-bottom: 10px;
+	}
+	&__list-text {
+		font-size: 11px;
+	}
+}

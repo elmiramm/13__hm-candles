@@ -125,7 +125,7 @@ select {
 		align-items: flex-start;
 	}
 	&__left {
-		max-width: 388px;
+		max-width: 371px;
 	}
 }
 .btn {
@@ -159,6 +159,7 @@ select {
 @import "header";
 @import "burger";
 @import "top";
+@import "about";
 @import "footer";
 
 
