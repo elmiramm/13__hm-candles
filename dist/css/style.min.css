@@ -656,6 +656,12 @@ select {
   .top__img img {
     width: 655px;
   }
+  .about__left {
+    min-width: 300px;
+  }
+  .about__list {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 830px) {
   body {
@@ -709,6 +715,35 @@ select {
   }
   .top__img {
     left: 180px;
+  }
+  .about__left {
+    min-width: 200px;
+  }
+  .about__title {
+    font-size: 15px;
+  }
+  .about__text {
+    font-size: 10px;
+  }
+  .about__list {
+    gap: 10px;
+    margin-left: 27px;
+    margin-bottom: 33px;
+  }
+  .about__list-img {
+    margin-bottom: 6px;
+  }
+  .about__list-img--1 {
+    width: 120px;
+  }
+  .about__list-img--2 {
+    width: 190px;
+  }
+  .about__list-img--3 {
+    width: 120px;
+  }
+  .about__list-text {
+    font-size: 6px;
   }
 }
 @media (max-width: 660px) {
@@ -787,7 +822,46 @@ select {
     gap: 22px;
   }
 }
+@media (max-width: 479.98px) {
+  .about__inner {
+    align-items: flex-end;
+  }
+  .about__left {
+    min-width: 170px;
+  }
+  .about__list {
+    margin-left: 0px;
+    padding-left: 10px;
+    gap: 5px;
+    margin-bottom: 0;
+    align-items: flex-end;
+  }
+  .about__list-text {
+    display: none;
+  }
+  .about__list-img {
+    margin-bottom: 6px;
+  }
+  .about__list-img--1 {
+    width: 80px;
+  }
+  .about__list-img--2 {
+    width: 140px;
+  }
+  .about__list-img--3 {
+    width: 80px;
+  }
+  .about__list-text {
+    font-size: 6px;
+  }
+}
 @media (max-width: 380px) {
+  body {
+    font-size: 8px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
   .top__left {
     max-width: 230px;
     padding-top: 60px;
@@ -805,5 +879,28 @@ select {
   }
   .top__img img {
     width: 150px;
+  }
+  .about {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .about__inner {
+    align-items: center;
+  }
+  .about__left {
+    min-width: 233px;
+  }
+  .about__text {
+    font-size: 8px;
+  }
+  .about__list {
+    padding-left: 12px;
+    margin-left: 12px;
+    padding-bottom: 38px;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .about__list-img--2, .about__list-img--3 {
+    display: none;
   }
 }
