@@ -411,12 +411,33 @@ select {
 }
 
 .section__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 370px auto;
+  align-items: start;
 }
-.section__left {
-  max-width: 371px;
+.section__right {
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+}
+.section__right::before {
+  content: "";
+  width: 24px;
+  height: 33px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/icons/candle.svg);
+}
+.section__right::after {
+  content: "";
+  width: 1000%;
+  height: 1px;
+  position: absolute;
+  bottom: 13px;
+  left: 22px;
+  background-color: #7B6152;
 }
 
 .btn {
@@ -443,6 +464,7 @@ select {
 .title {
   font-family: "Yeseva One", cursive;
   font-size: 40px;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
@@ -542,6 +564,7 @@ select {
   position: relative;
 }
 .top__left {
+  max-width: 390px;
   padding-top: 150px;
   padding-bottom: 245px;
 }
@@ -581,25 +604,6 @@ select {
   gap: 20px;
   padding-left: 110px;
   padding-bottom: 48px;
-  position: relative;
-}
-.about__list::before {
-  content: "";
-  width: 24px;
-  height: 33px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url(../img/icons/candle.svg);
-}
-.about__list::after {
-  content: "";
-  width: 1000%;
-  height: 1px;
-  position: absolute;
-  bottom: 13px;
-  left: 22px;
-  background-color: #7B6152;
 }
 .about__list-img {
   margin-bottom: 10px;
@@ -608,6 +612,37 @@ select {
   font-size: 11px;
 }
 
+.products {
+  margin-bottom: 150px;
+}
+.products__content {
+  gap: 50px 90px;
+}
+.products__item {
+  width: 290px;
+  text-align: center;
+  margin: 0 auto;
+}
+.products__item-img {
+  margin: 0 auto 8px;
+}
+.products__item-price {
+  font-family: "Yeseva One", cursive;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+.products__item-title {
+  font-family: "Yeseva One", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.products__item-descr {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
 .footer {
   padding: 35px 0;
   background-color: #fff;
