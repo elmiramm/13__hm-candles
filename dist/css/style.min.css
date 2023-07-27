@@ -715,6 +715,40 @@ select {
   padding: 14px 28px 14px 10px;
 }
 
+.team {
+  background-color: #A5978E;
+  padding: 61px 0 83px;
+  margin-bottom: 150px;
+  color: #FAFAFA;
+}
+.team .section__right {
+  gap: 78px 75px;
+  padding-bottom: 0;
+}
+.team .section__right::before,
+.team .section__right::after {
+  display: none;
+}
+.team__item {
+  max-width: 320px;
+  position: relative;
+}
+.team__item-info {
+  max-width: 168px;
+  background-color: #7B6152;
+  padding: 14px 9px 15px;
+  text-align: center;
+  font-size: 11px;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  z-index: 5;
+}
+.team__item-name {
+  font-family: "Yeseva One", cursive;
+  font-size: 12px;
+}
+
 .footer {
   padding: 35px 0;
   background-color: #fff;
@@ -821,6 +855,12 @@ select {
   }
   .header__contacts {
     gap: 2px;
+  }
+  .courses__item-img {
+    max-width: 195px;
+  }
+  .courses .products__item {
+    width: 195px;
   }
   .footer__inner {
     flex-wrap: wrap;
@@ -1021,6 +1061,16 @@ select {
   }
   .top__img img {
     width: 326px;
+  }
+  .courses .section__right {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
+  .courses__item-img {
+    max-width: 255px;
+  }
+  .courses .products__item {
+    width: 255px;
   }
   .footer {
     font-size: 14px;

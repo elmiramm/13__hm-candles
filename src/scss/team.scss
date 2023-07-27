@@ -1,0 +1,35 @@
+.team {
+	background-color: $accentBg;
+	padding: 61px 0 83px;
+	margin-bottom: 150px;
+	color: $textColor;
+	.section__right {
+		gap: 78px 75px;
+		padding-bottom: 0;
+	}
+	.section__right::before,
+	.section__right::after {
+		display: none;
+	}
+	&__item {
+		max-width: 320px;
+		position: relative;
+	}
+	&__item-info {
+		max-width: 168px;
+		background-color: $smallBlogsBg;
+		padding: 14px 9px 15px;
+		text-align: center;
+		font-size: 11px;
+
+		position: absolute;
+		right: 0;
+		bottom: 8px;
+		z-index: 5;
+	}
+	&__item-name {
+		font-family: 'Yeseva One', cursive;
+		font-size: 12px;
+
+	}
+}

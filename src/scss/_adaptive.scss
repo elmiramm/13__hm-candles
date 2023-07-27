@@ -93,6 +93,14 @@
 			gap: 2px;
 		}
 	}
+	.courses {
+		&__item-img {
+			max-width: 195px;
+		}
+		.products__item {
+			width: 195px;
+		}
+	}
 	.footer {
 		&__inner {
 			flex-wrap: wrap;
@@ -330,6 +338,18 @@
 			img {
 				width: 326px
 			}
+		}
+	}
+	.courses {
+		.section__right {
+			grid-template-columns: auto;
+			gap: 40px;
+		}
+		&__item-img {
+			max-width: 255px;
+		}
+		.products__item {
+			width: 255px;
 		}
 	}
 	.footer {
