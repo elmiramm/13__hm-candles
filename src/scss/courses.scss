@@ -1,0 +1,39 @@
+.courses {
+	&__item {
+		position: relative;
+		& p {
+			position: absolute;
+
+			font-family: Yeseva One;
+			font-size: 11px;
+			color: #fff;
+
+			background-color: #BEA495;
+		}
+	}
+	&__item-img {
+		width: 100%;
+
+		margin-bottom: 23px;
+	}
+	&__item-title {
+		padding: 15px 15px 15px 10px;
+		top: 45%;
+		left: -1px;
+	}
+	&__item-text {
+		top: 60%;
+		left: -1px;
+		padding: 7px 16px 7px 10px;
+		span {
+			font-family: 'Comfortaa', cursive;
+			font-size: 10px;
+		}
+	}
+	&__item-price {
+		right: -10px;
+		bottom: -10px;
+
+		padding: 14px 28px 14px 10px;
+	}
+}
