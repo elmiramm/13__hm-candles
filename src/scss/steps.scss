@@ -1,0 +1,39 @@
+.steps {
+	margin-bottom: 150px;
+	&__list {
+		gap: 70px 25px;
+		counter-reset: number;
+	}
+	&__list-item {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+
+		position: relative;
+		&::before {
+			counter-increment: number;
+			content: "0"counter(number);
+
+			position: absolute;
+			bottom: 0;
+
+			font-family: 'Yeseva One', cursive;
+			font-size: 30px;
+			color: #BEA495;
+		}
+		&--even::before {
+			right: 0;
+		}
+		&:nth-child(n+10)::before {
+			content: counter(number);
+		}
+	}
+	&__list-text {
+		max-width: 171px;
+		padding-bottom: 40px;
+	}
+	&__list-img {
+		max-width: 158px;
+		width: 100%;
+	}
+}
