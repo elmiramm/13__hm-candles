@@ -51,6 +51,14 @@
 			width: 100%;
 		}
 	}
+	.team {
+		.section__right {
+			gap: 30px 20px;
+		}
+		&__item {
+			max-width: 315px;
+		}
+	}
 }
 @media (max-width: $bp992) {
 	.section {
@@ -232,6 +240,25 @@
 			max-width: 86px;
 		}
 	}
+	.team {
+		.section__right {
+			gap: 30px 14px;
+		}
+		&__item {
+			max-width: 210px;
+		}
+		img {
+			width: 147px;
+		}
+		&__item-info {
+			max-width: 106px;
+			font-size: 7px;
+			padding: 10px 5px;
+		}
+		&__item-name {
+			font-size: 8px;
+		}
+	}
 }
 @media (max-width: $burgerBP) {
 	.section {
@@ -400,6 +427,19 @@
 			font-size: 6px;
 		}
 	}
+	.team {
+		.section__right {
+			gap: 30px;
+		}
+		&__item-info {
+			max-width: 106px;
+			font-size: 7px;
+			padding: 10px 5px;
+		}
+		&__item-name {
+			font-size: 8px;
+		}
+	}
 }
 @media (max-width: 380px) {
 	body {
@@ -490,6 +530,29 @@
 		}
 		&__list-img {
 			max-width: 66px;
+		}
+	}
+	.team {
+		.section__right {
+			grid-template-columns: 90%;
+			gap: 20px;
+			justify-content: center;
+		}
+		&__item {
+			max-width: 300px;
+			width: 100%;
+			img {
+				width: 205px;
+			}
+		}
+		&__item-info {
+			max-width: 152px;
+			font-size: 10px;
+			padding: 15px 8px;
+		}
+		&__item-name {
+			font-size: 12px;
+			margin-bottom: 5px;
 		}
 	}
 }
