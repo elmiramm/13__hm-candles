@@ -36,15 +36,27 @@
 			gap: 67px;
 		}
 	}
+	.steps {
+		&__list {
+			gap: 35px;
+		}
+		&__list-item {
+			gap: 30px;
+		}
+		&__list-text {
+			max-width: 140px;
+		}
+		&__list-img {
+			max-width: 140px;
+			width: 100%;
+		}
+	}
 }
 @media (max-width: $bp992) {
 	.section {
 		&__inner{
 			grid-template-columns: 200px auto;
 		}
-	}
-	.title {
-		font-size: 15px;
 	}
 	.top {
 		&__title {
@@ -68,6 +80,9 @@
 @media (max-width: 830px) {
 	body {
 		font-size: 10px;
+	}
+	.title {
+		font-size: 15px;
 	}
 	.header {
 		padding: 0;
@@ -192,6 +207,23 @@
 			}
 		}
 	}
+	.steps {
+		&__list-item {
+			gap: 0 20px;
+			&::before {
+				font-size: 20px;
+			}
+		}
+		&__list-text {
+			max-width: 95px;
+			padding-bottom: 30px;
+
+			font-size: 8px;
+		}
+		&__list-img {
+			max-width: 86px;
+		}
+	}
 }
 @media (max-width: $burgerBP) {
 	.section {
@@ -251,6 +283,11 @@
 	.about {
 		&__inner {
 			display: grid;
+		}
+	}
+	.steps {
+		&__list {
+			gap: 25px 40px;
 		}
 	}
 }
@@ -422,6 +459,17 @@
 			&:hover {
 				font-size: 10px;
 			}
+		}
+	}
+	.steps {
+		&__list {
+			gap: 20px 25px;
+		}
+		&__list-text {
+			max-width: 73px;
+		}
+		&__list-img {
+			max-width: 66px;
 		}
 	}
 }
