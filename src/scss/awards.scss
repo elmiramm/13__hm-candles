@@ -1,10 +1,22 @@
 .awards {
 	margin-bottom: 150px;
+	.section__inner {
+		width: 100%;
+	}
+	.section__right {
+		display: block;
+		max-width: 908px;
+		width: 100%;
+	}
 }
 
+
 .slider-awards {
-	max-width: 908px; 
+	max-width: auto; 
 	width: 100%;
+	&__body {
+		width: 100%;
+	}
 	&__controls {
 		margin-top: 50px;
 	}

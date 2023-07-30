@@ -126,20 +126,26 @@ export function swiperSlider() {
 			// 	nextEl: '.slider-section .slider-arrow--next',
 			// 	prevEl: '.slider-section .slider-arrow--prev',
 			// },
-			// breakpoints: { //Mobile First - значения от заданной точки и больше 
-			// 	279: {
-			// 		slidesPerView: 1.1,
-			// 		spaceBetween: 15,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	992: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 32,
-			// 	},
-			// }
+			breakpoints: { //Mobile First - значения от заданной точки и больше 
+				280: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+				},
+				660: {
+					slidesPerView: 4,
+					slidesPerGroup: 2,
+				},
+				830: {
+					slidesPerView: 3,
+					slidesPerGroup: 1,
+				},
+				1000: {
+					slidesPerView: 2.85,
+				},
+				1185: {
+					slidesPerView: 2.33
+				}
+			}
 		});
 	}
 }

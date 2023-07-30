@@ -7,6 +7,13 @@
 	.slider-feedback {
 		max-width: 660px; 
 	}
+	.awards {
+		.slider-awards {
+			img {
+				max-width: 300px;
+			}
+		}
+	}
 }
 @media (max-width: 1050px) {
 	.feedback {
@@ -115,6 +122,9 @@
 			grid-template-columns: 200px auto;
 		}
 	}
+	.title {
+		font-size: 30px;
+	}
 	.top {
 		&__title {
 			font-size: 20px;
@@ -169,6 +179,14 @@
 		}
 		.socials {
 			justify-content: center;
+		}
+	}
+	.awards {
+		.slider-awards {
+			img {
+				max-width: 200px;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -401,6 +419,18 @@
 			gap: 25px 40px;
 		}
 	}
+	.awards {
+		.section__inner {
+			max-width: 600px;
+		}
+		.slider-awards {
+			img {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+	}
+	
 }
 @media (max-width: 530px) {
 	.section {
