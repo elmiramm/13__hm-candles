@@ -22,7 +22,7 @@ $burgerBP: 660px;
 
 @import "fonts";
 @import "icons"; 
-@import "../../node_modules/swiper/swiper";
+@import "swiper";
 
 html {
 	box-sizing: border-box;
@@ -190,6 +190,7 @@ select {
 @import "steps";
 @import "courses";
 @import "team";
+@import "feedback";
 @import "footer";
 
 
