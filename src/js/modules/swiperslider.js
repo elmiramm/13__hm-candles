@@ -128,6 +128,10 @@ export function swiperSlider() {
 			// },
 			breakpoints: { //Mobile First - значения от заданной точки и больше 
 				280: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+				},
+				380: {
 					slidesPerView: 2,
 					slidesPerGroup: 2,
 				},

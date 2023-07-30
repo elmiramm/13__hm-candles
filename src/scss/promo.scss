@@ -1,0 +1,25 @@
+.promo {
+	padding: 0 15px;
+	min-height: 332px;
+	background-image: url(../img/promo-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 150px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 109px;
+
+	&__title {
+		font-family: Yeseva One;
+		font-size: 40px;
+
+		color: #fff;
+	}
+	&__btn {
+		min-width: 170px;
+		min-height: 50px;
+	}
+}

@@ -869,6 +869,29 @@ select {
   margin-top: 50px;
 }
 
+.promo {
+  padding: 0 15px;
+  min-height: 332px;
+  background-image: url(../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 109px;
+}
+.promo__title {
+  font-family: Yeseva One;
+  font-size: 40px;
+  color: #fff;
+}
+.promo__btn {
+  min-width: 170px;
+  min-height: 50px;
+}
+
 .footer {
   padding: 35px 0;
   background-color: #fff;
@@ -992,6 +1015,9 @@ select {
   .team__item {
     max-width: 315px;
   }
+  .promo__title {
+    max-width: 553px;
+  }
 }
 @media (max-width: 991.98px) {
   .section__inner {
@@ -1050,6 +1076,9 @@ select {
     max-width: 200px;
     width: 100%;
   }
+  .promo .btn:hover {
+    font-size: 10px;
+  }
 }
 @media (max-width: 780px) {
   .feedback__inner {
@@ -1069,6 +1098,16 @@ select {
   }
   .swiper-pagination-bullet::after {
     width: 28px;
+  }
+  .promo {
+    min-height: 150px;
+  }
+  .promo__title {
+    font-size: 15px;
+  }
+  .promo__btn {
+    min-width: 125px;
+    min-height: 40px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1365,6 +1404,27 @@ select {
     width: 100%;
     min-width: 100px;
   }
+  .promo {
+    min-height: 120px;
+    gap: 85px;
+  }
+  .promo__title {
+    font-size: 15px;
+  }
+  .promo__btn {
+    min-width: 85px;
+    min-height: 32px;
+  }
+}
+@media (max-width: 460px) {
+  .promo {
+    padding: 0 10px;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .promo__title {
+    max-width: 210px;
+  }
 }
 @media (max-width: 380px) {
   body {
@@ -1468,5 +1528,14 @@ select {
   .team__item-name {
     font-size: 12px;
     margin-bottom: 5px;
+  }
+  .slider-awards .swiper-pagination-bullets {
+    justify-content: center;
+  }
+  .promo__btn {
+    font-size: 8px;
+  }
+  .promo__btn:hover {
+    font-size: 8px;
   }
 }
