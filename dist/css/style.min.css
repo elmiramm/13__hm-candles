@@ -908,6 +908,7 @@ select {
   padding: 75px 42px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.3);
 }
 .contacts__title {
   font-family: YesevaOne;
@@ -918,8 +919,6 @@ select {
   border: none;
   border-bottom: 1px solid #000;
   padding: 11px;
-}
-.contacts__input:not(:last-child) {
   margin-bottom: 10px;
 }
 .contacts__input::placeholder {
@@ -929,6 +928,7 @@ select {
   margin-top: 50px;
   min-width: none;
   max-width: 170px;
+  color: #272727;
 }
 
 .footer {
@@ -1057,6 +1057,20 @@ select {
   .promo__title {
     max-width: 553px;
   }
+  .contacts__inner {
+    gap: 30px;
+  }
+  .contacts__inner img {
+    min-height: 510px;
+    max-width: 335px;
+  }
+  .contacts__btn {
+    margin-top: 30px;
+  }
+  .contacts__form {
+    margin-bottom: 30px;
+    padding: 75px 21px;
+  }
 }
 @media (max-width: 991.98px) {
   .section__inner {
@@ -1147,6 +1161,25 @@ select {
   .promo__btn {
     min-width: 125px;
     min-height: 40px;
+  }
+  .contacts__inner {
+    gap: 15px;
+  }
+  .contacts__inner img {
+    min-height: 285px;
+    max-width: 187px;
+  }
+  .contacts__title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .contacts__btn {
+    margin-top: 20px;
+    min-height: 50px;
+  }
+  .contacts__form {
+    margin-bottom: 4px;
+    padding: 30px 21px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1454,6 +1487,14 @@ select {
   .promo__btn {
     min-width: 85px;
     min-height: 32px;
+  }
+  .contacts__inner img {
+    display: none;
+  }
+  .contacts__btn {
+    min-height: none;
+    max-height: 40px;
+    max-width: 85px;
   }
 }
 @media (max-width: 460px) {
