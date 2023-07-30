@@ -12,6 +12,11 @@
 	align-items: center;
 	justify-content: center;
 }
+.slider-awards {
+	.swiper-pagination-bullets {
+		justify-content: left;
+	}
+}
 .swiper-pagination-bullet {
 	cursor: pointer;
 	flex: 0 0 53px;

@@ -337,6 +337,10 @@
   justify-content: center;
 }
 
+.slider-awards .swiper-pagination-bullets {
+  justify-content: left;
+}
+
 .swiper-pagination-bullet {
   cursor: pointer;
   flex: 0 0 53px;
@@ -495,7 +499,7 @@ select {
 }
 
 .title {
-  font-family: "Yeseva One", cursive;
+  font-family: "YesevaOne", cursive;
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -659,13 +663,13 @@ select {
   margin: 0 auto 8px;
 }
 .products__item-price {
-  font-family: "Yeseva One", cursive;
+  font-family: "YesevaOne", cursive;
   font-size: 16px;
   margin-bottom: 12px;
   font-weight: 400;
 }
 .products__item-title {
-  font-family: "Yeseva One", cursive;
+  font-family: "YesevaOne", cursive;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 16px;
@@ -694,7 +698,7 @@ select {
   content: "0" counter(number);
   position: absolute;
   bottom: 0;
-  font-family: "Yeseva One", cursive;
+  font-family: "YesevaOne", cursive;
   font-size: 30px;
   color: #BEA495;
 }
@@ -777,21 +781,28 @@ select {
   z-index: 5;
 }
 .team__item-name {
-  font-family: "Yeseva One", cursive;
+  font-family: "YesevaOne", cursive;
   font-size: 12px;
 }
 
+.feedback {
+  margin-bottom: 150px;
+}
 .feedback .section__right {
   display: block;
+  width: 100%;
+  max-width: 760px;
 }
 .feedback__content {
-  padding-top: 90px;
-  max-width: 372px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 100%;
 }
 .feedback__item {
   display: flex;
   gap: 16px;
+  width: 100%;
 }
 .feedback .icon-play {
   position: relative;
@@ -826,9 +837,24 @@ select {
 }
 
 .slider-feedback {
-  max-width: 908px;
+  width: 100%;
+}
+.slider-feedback__body {
+  width: 100%;
 }
 .slider-feedback__controls {
+  margin-top: 50px;
+}
+
+.awards {
+  margin-bottom: 150px;
+}
+
+.slider-awards {
+  max-width: 908px;
+  width: 100%;
+}
+.slider-awards__controls {
   margin-top: 50px;
 }
 
@@ -862,6 +888,47 @@ select {
   transition: stroke 0.3s ease;
 }
 
+@media (max-width: 1185px) {
+  .feedback__content {
+    max-width: 660px;
+  }
+  .slider-feedback {
+    max-width: 660px;
+  }
+}
+@media (max-width: 1050px) {
+  .feedback__content {
+    max-width: 420px;
+  }
+  .feedback__img-block {
+    max-width: 200px;
+  }
+  .feedback__img-block img {
+    width: 100%;
+  }
+  .feedback .icon-play::before {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+  }
+  .feedback__content {
+    max-width: 310px;
+  }
+  .feedback__text {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+  .feedback__btn {
+    width: 104px;
+    height: 39px;
+    font-size: 8px;
+    padding: 0;
+  }
+  .feedback__btn:hover {
+    font-size: 10px;
+  }
+}
 @media (max-width: 1000px) {
   .section__inner {
     grid-template-columns: 290px auto;
@@ -963,12 +1030,37 @@ select {
     justify-content: center;
   }
 }
+@media (max-width: 780px) {
+  .feedback__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback__left {
+    max-width: 100%;
+  }
+  .feedback__content {
+    width: 100%;
+    max-width: 100%;
+  }
+  .swiper-pagination-bullet {
+    flex: 0 0 28px;
+  }
+  .swiper-pagination-bullet::after {
+    width: 28px;
+  }
+}
 @media (max-width: 767.98px) {
   .container {
     max-width: 680px;
   }
   .section__left {
     max-width: 200px;
+  }
+  .feedback__left {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
   }
   .title {
     font-size: 15px;
@@ -1233,6 +1325,17 @@ select {
   }
   .team__item-name {
     font-size: 8px;
+  }
+  .feedback__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback__content {
+    align-items: center;
+  }
+  .feedback__btn {
+    width: 100%;
+    min-width: 100px;
   }
 }
 @media (max-width: 380px) {

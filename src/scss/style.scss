@@ -41,7 +41,7 @@ body {
 
 
 	// font-family: 'Comfortaa', cursive;
-	// font-family: 'Yeseva One', cursive;
+	// font-family: 'YesevaOne', cursive;
 	font-family: $fontFamily, cursive; 
 	font-size: $fontSize;
 	font-weight: 400;
@@ -175,7 +175,7 @@ select {
 }
 
 .title {
-	font-family: 'Yeseva One', cursive;
+	font-family: 'YesevaOne', cursive;
 	font-size: 40px;
 	font-weight: 400;
 
@@ -191,6 +191,7 @@ select {
 @import "courses";
 @import "team";
 @import "feedback";
+@import "awards";
 @import "footer";
 
 

@@ -1,15 +1,20 @@
 .feedback {
+	margin-bottom: 150px;
 	.section__right {
 		display: block;
+		width: 100%;
+		max-width:760px; 
 	}
 	&__content {
-		padding-top: 90px;
-		max-width: 372px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 		width: 100%;
 	}
 	&__item {
 		display: flex;
 		gap: 16px;
+		width: 100%;
 	}
 	.icon-play {
 		position: relative;
@@ -50,7 +55,10 @@
 }
 
 .slider-feedback {
-	max-width: 908px; 
+	width: 100%;
+	&__body {
+		width: 100%;
+	}
 	&__controls {
 		margin-top: 50px;
 	}
