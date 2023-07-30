@@ -131,6 +131,7 @@ export function swiperSlider() {
 					slidesPerView: 1,
 					slidesPerGroup: 1,
 				},
+
 				380: {
 					slidesPerView: 2,
 					slidesPerGroup: 2,

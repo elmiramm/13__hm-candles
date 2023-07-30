@@ -869,6 +869,47 @@ select {
   margin-top: 50px;
 }
 
+.questions {
+  margin-bottom: 150px;
+}
+
+.accordeon__text {
+  background-color: #fafafa;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding: 0 17px 17px 17px;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+.accordeon__text--visible {
+  opacity: 1;
+  visibility: visible;
+}
+.accordeon__btn {
+  font-family: YesevaOne;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 17px;
+  background-color: #fafafa;
+}
+.accordeon__btn::before {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+.accordeon__btn:not(:last-child) {
+  margin-bottom: 10px;
+}
+.accordeon__btn--active::before {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
 .promo {
   padding: 0 15px;
   min-height: 332px;
@@ -923,6 +964,8 @@ select {
 }
 .contacts__input::placeholder {
   color: #B3B3B3;
+  font-size: 14px;
+  font-family: "Comfortaa", cursive;
 }
 .contacts__btn {
   margin-top: 50px;
