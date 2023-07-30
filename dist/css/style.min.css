@@ -892,6 +892,45 @@ select {
   min-height: 50px;
 }
 
+.contacts {
+  margin-bottom: 50px;
+}
+.contacts__inner {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contacts__form {
+  flex: 1 1 auto;
+  background-color: #fff;
+  margin-bottom: 45px;
+  padding: 75px 42px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__title {
+  font-family: YesevaOne;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.contacts__input {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 11px;
+}
+.contacts__input:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contacts__input::placeholder {
+  color: #B3B3B3;
+}
+.contacts__btn {
+  margin-top: 50px;
+  min-width: none;
+  max-width: 170px;
+}
+
 .footer {
   padding: 35px 0;
   background-color: #fff;
@@ -1292,7 +1331,8 @@ select {
   }
 }
 @media (max-width: 530px) {
-  .section {
+  .section,
+  .promo {
     margin-bottom: 50px;
   }
   .container {
