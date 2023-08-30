@@ -33,7 +33,7 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 const sass = gulpSass(dartSass);
 
-const buildFolder = `./dist`; //или: const buildFolder = `./${rootFolder}`
+const buildFolder = `./docs`; //или: const buildFolder = `./${rootFolder}`
 const srcFolder = `./src`;
 
 const isBuild = process.argv.includes('--build');
